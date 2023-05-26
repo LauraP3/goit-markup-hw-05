@@ -550,11 +550,12 @@ p {
 /* DECORATIVE ELEMENTS */
 .label {
   position: relative;
+  overflow: hidden;
 }
 .overlay {
   background-color: rgba(47, 48, 58, 0.8);
-  width: 100%;
-  height: 100%;
+  width: 370px;
+  height: 70px;
   position: absolute;
   display: flex;
   font-weight: 700;
