@@ -14,15 +14,21 @@
 
   <body>
     <div class="container">
-      <header>
+      <header class="heading-box">
         <a href="index.html" class="logo header"
           >Web<span class="secondary-word-header">Studio</span></a
         >
         <nav>
           <ul class="nav-link">
-            <li><a class="link" href="index.html">Studio</a></li>
-            <li><a class="link" href="portofolio.html">Portofolio</a></li>
-            <li><a class="link" href="contacts.html">Contacts</a></li>
+            <li class="home-button">
+              <a class="link studio" href="index.html">Studio</a>
+            </li>
+            <li class="home-button">
+              <a class="link" href="portofolio.html">Portofolio</a>
+            </li>
+            <li class="home-button">
+              <a class="link" href="contacts.html">Contacts</a>
+            </li>
           </ul>
         </nav>
         <div class="cta">
@@ -46,7 +52,10 @@
       <main>
         <section class="hero-page">
           <h1 class="main-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-          <button class="btn-service">Request our service</button>
+          <button data-modal-open class="btn-service">
+            Request our service
+          </button>
+    
         </section>
 
         <section class="secondary-section">
@@ -105,24 +114,33 @@
         <div class="what-we-do">
           <h2 class="secondary-title">What we do</h2>
           <div class="img-list">
-            <img
-              src="./images/box_1.jpg"
-              alt="typing on keyboard while being in the office"
-              width="370"
-              height="294"
-            />
-            <img
-              src="./images/box_2.jpg"
-              alt="checking the phone while in front of the laptop"
-              width="370"
-              height="294"
-            />
-            <img
-              src="./images/box_3.jpg"
-              alt="graphic a RGB hexagon using a graphic tablet"
-              width="370"
-              height="294"
-            />
+            <div class="label">
+              <img
+                src="./images/box_1.jpg"
+                alt="typing on keyboard while being in the office"
+                width="370"
+                height="294"
+              />
+              <p class="overlay">desktop apps</p>
+            </div>
+            <div class="label">
+              <img
+                src="./images/box_2.jpg"
+                alt="checking the phone while in front of the laptop"
+                width="370"
+                height="294"
+              />
+              <p class="overlay">Mobile apps</p>
+            </div>
+            <div class="label">
+              <img
+                src="./images/box_3.jpg"
+                alt="graphic a RGB hexagon using a graphic tablet"
+                width="370"
+                height="294"
+              />
+              <p class="overlay">design solutions</p>
+            </div>
           </div>
         </div>
 
@@ -348,5 +366,14 @@
         </div>
       </footer>
     </div>
+  </div>
+    <!-- Modal-->
+    <div  class="modal is-hidden" data-modal>
+      <div class="modal-content">
+        <button data-modal-close class="close-btn">
+          <img width="11" height="11" src="/images/close_btn.png" alt="x">
+        </button>
+    </div>
+    <script src="js/modal.js"></script>
   </body>
 </html>
